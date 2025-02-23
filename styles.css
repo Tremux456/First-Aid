@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Softer background color */
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #0f0f0f; /* Default text color */
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below images */
+}
+
+/* Header Section */
+header {
+    background-color: #d31407;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+.hamburger:hover {
+    transform: rotate(90deg); /* Rotate on hover */
+}
+
+/* Navigation Menu */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #811a12;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+header nav ul li a:hover {
+    background-color: #a8231a; /* Hover background color */
+    color: #fff;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none; /* Hide menu by default */
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #811a12;
+        flex-direction: column;
+        padding-top: 60px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease; /* Smooth slide-in animation */
+        transform: translateX(-100%); /* Hide menu off-screen */
+    }
+
+    #menu-bar.show ul {
+        display: flex; /* Show menu when 'show' class is added */
+        transform: translateX(0); /* Slide menu into view */
+    }
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 250px; /* Slightly wider for better touch targets */
+        height: 100%;
+        background-color: #811a12;
+        flex-direction: column;
+        padding-top: 60px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #menu-bar.show ul {
+        display: flex; /* Show menu when toggled */
+    }
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+section h2, section h3 {
+    color: #d31407; /* Red color for headings */
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 15px;
+    color: #555; /* Slightly darker text for better readability */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        padding: 15px 20px; /* Larger touch targets */
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}

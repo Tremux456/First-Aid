@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic First Aid Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+        
+    <style>
+        .heading{
+            color: #811a12;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h><img src="image/First Aid logo.png" alt="first Aid logo" width="15%"></h>
+        <h1>BASIC FIRST AID EDUCATION PLATFORM</h1>
+        
+        <!-- Hamburger Button -->
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        
+        <nav id="menu-bar">
+            <ul>
+                <li><a href="cut.html"> Cut</a></li>
+                <li class="heading">.....</li>
+                <li><a href="burn.html">Burn</a></li>
+                <li class="heading">.....</li>
+                <li><a href="choking.html">Choking</a></li>
+                <li class="heading">.....</li>
+                <li><a href="cpr.html">CPR</a></li>
+                <li class="heading">.....</li>
+                <li><a href="CONTACT US.html">Contact US</a></li>
+                <li class="heading">.....</li>
+                <li><a href="us.html">About US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Body Section -->
+    <main>
+        <!-- Search Bar -->
+        <section>
+        <input type="search" id="searchBar" placeholder="Enter Search content..." onchange="openpage()">
+        <button onclick="search()">Search</button>
+        <div id="results"></div>
+       <ul><b><i><u>SEARCH CONTENT.</u></i></b>
+        <li>cut, choking, burn, cpr</li>
+       </ul>
+</section>
+
+        <section>
+            <h2>Welcome to Basic First Aid Guide </h2>
+            <h3>Overviews🌹</h3>
+            <p>This website is designed to provide step-by-step guidance on handling common first aid emergencies. Use the menu above or the search bar to quickly find the information you need.</p>
+            <p>This level covers essential skills for everyday emergencies, such as CPR, stopping bleeding, bandaging, and treating minor injuries like cuts and burns. 
+                <br>It's ideal for individuals who want to be prepared for common emergencies</p>
+        </section>
+        <section>
+            <h3>Introduction to First Aid</h3>
+            <p>First aid is the immediate care given to a person who has been injured or suddenly taken ill, before professional medical help arrives. 
+                <br>The primary goal of first aid is to stabilize the patient's condition, prevent further harm, and promote recovery. It encompasses a wide range of techniques and procedures, from simple actions like cleaning a wound and applying a bandage, to more complex interventions like performing CPR (cardiopulmonary resuscitation) or using an Automated External Defibrillator (AED).</p>
+            <h3><b>First aid is essential in various situations, including:</b></h3>
+            <p>Accidents and injuries: Providing care for cuts, bruises, fractures, burns, and other injuries.</p>
+            <p>Medical emergencies: Responding to conditions like heart attacks, strokes, seizures, and allergic reactions.</p>
+            <p>Environmental conditions: Treating heatstroke, hypothermia, and other conditions caused by extreme weather.</p>
+            <p>Knowing first aid can make a significant difference in emergency situations, potentially saving lives and reducing the severity of injuries. It's a valuable skill for everyone to learn, regardless of age or profession.</p>
+            <h3>Levels of First Aid Training</h3>
+            <p><b>Basic First Aid Training:</b>
+                <br>This level covers essential skills for everyday emergencies, such as CPR, stopping bleeding, bandaging, and treating minor injuries like cuts and burns. <br>It's ideal for individuals who want to be prepared for common emergencies.</p>
+            <p><b>Intermediate First Aid (Standard First Aid):</b><br>This level builds on basic first aid and includes more comprehensive techniques, such as managing fractures, sprains, shock, and using an Automated External Defibrillator (AED). It's suitable for people responsible for the safety of others, like teachers or community volunteers.</p>
+            <p><b>Advanced First Aid Training:</b><br>Designed for professionals like paramedics, firefighters, and police officers, this level covers more complex emergency response techniques, including advanced patient assessment, handling severe injuries, and managing critical scenarios until professional help arrives.</p>
+            <p><b>Specialized First Aid Courses:</b> These courses focus on specific areas, such as wilderness first aid, marine first aid, or mental health first aid, providing specialized knowledge and skills for particular environments or situations.</p>
+        </section>
+    </main>
+
+      <!-- Footer Section -->
+      <footer>
+        <p>&copy; 2025 Basic First Aid Guide. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function openpage(){
+var x = document.getElementById("searchBar").value;
+
+if (x == "cut"){
+    window.open("/my project/cut.html")
+}
+
+if (x == "cpr"){
+    window.open("/my project/cpr.html")
+}
+}
+
+    </script>
+</body>
+</html>
