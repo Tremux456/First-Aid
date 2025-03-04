@@ -177,3 +177,18 @@ footer p {
         padding: 20px;
     }
 }
+ .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            transition: height 0.3s;
+            overflow: hidden;
+        }
+.card-header {
+            font-size: 18px;
+            font-weight: bold;
+        }
+.card-content {
+            display: none;
+            margin-top: 10px;
