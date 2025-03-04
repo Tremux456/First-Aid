@@ -29,10 +29,14 @@ function openpage() {
         "third-degree burns": "Third-Degree Burn.html",
         "chemical burn": "Chemical Burns.html"
     };
-
+// translation.
     if (pages[x]) {
         window.open(pages[x]);
     } else {
         alert("No matching page found.");
     }
 }
+   function toggleContent(card) {
+            const content = card.querySelector('.card-content');
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
